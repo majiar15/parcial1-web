@@ -3,9 +3,15 @@
     padding: 0PX;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('../assets/font/SourceSansPro-Regular.ttf');
+}
+
 header>nav>ul {
     list-style: none;
     display: flex;
@@ -39,26 +45,24 @@ header::after {
 
 nav>ul>li {
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     display: block;
 }
 
-.selected {
-    text-decoration: underline;
-    text-underline-position: below;
+.line {
+    display: block;
+    border-bottom: 2px solid #ffffff;
 }
 
 #frase {
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     z-index: 1;
     position: relative;
     width: 40%;
 }
 
-#frase>span {
+#frase>h1 {
     display: inline-block;
     font-size: 80px;
     font-weight: 900;
@@ -84,7 +88,6 @@ select {
     display: block;
     background: rgb(255, 255, 255);
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
     height: 40px;
     padding: 5px;
     width: 300px;
@@ -99,7 +102,6 @@ input:focus,
 
 .label-main-form {
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
 }
 
@@ -129,4 +131,98 @@ input:focus,
 
 #main-form>form>button:hover {
     cursor: pointer;
+}
+
+#bienes-raices {
+    background: #f6f6f6;
+}
+
+#bienes-raices>h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 50px;
+    margin-bottom: 12px;
+}
+
+#bienes-raices>span {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.card {
+    width: 400px;
+    margin-bottom: 40px;
+    background: #ffffff;
+}
+
+.card-img {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.card-img>span {
+    position: absolute;
+    top: 18px;
+    right: -8px;
+    padding: 6px 15px;
+    background: #0ba;
+}
+
+.card-img>span::after {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    border-top: 5px solid #00887c;
+    width: 5px;
+    content: " ";
+    display: block;
+    border-right: 5px solid #f6f6f6;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.card-title,
+.card-ubicacion,
+.precio {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 2px 0px 15px 0px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-line {
+    display: block;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+}
+
+.precio {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #0ba;
+    font-weight: 600;
 }
