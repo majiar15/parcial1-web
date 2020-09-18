@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
+    <link rel="stylesheet" href="./public/css/Propiedades.css">
 </head>
 
 <body>
     <header>
         <nav>
-
             <ul>
-                <li class="logo">tu vivienda</li>
-                <li class="selected"> <a href="./index.html">home</a>
-
-                </li>
+                <li class="logo"><a href="./index.html">tu vivienda</a></li>
+                <li><a href="./index.html">home</a></li>
                 <li>
-                    <a href="./Propiedades.html"> properties</a>
+                    <a href="./Propiedades.html">
+                         properties
+                    </a>
                     <span class="line"></span>
                 </li>
-
-                <li>galery</li>
-                <li>contact</li>
+                <li><a href="#">galery </a></li>
+                <li><a href="#">contact </a></li>
             </ul>
         </nav>
     </header>
@@ -216,14 +215,12 @@
 
                             <label class="label-main-form">rango de precio</label>
                             <div class="range">
-                                <input type="number" class="imput-main-form" placeholder="min"> <input type="number"
-                                    class="imput-main-form" placeholder="max">
+                                <input type="number" class="imput-main-form" placeholder="min"> <input type="number" class="imput-main-form" placeholder="max">
                             </div>
 
                             <label class="label-main-form">Area</label>
                             <div class="range">
-                                <input type="number" class="imput-main-form" placeholder="min"> <input type="number"
-                                    class="imput-main-form" placeholder="max">
+                                <input type="number" class="imput-main-form" placeholder="min"> <input type="number" class="imput-main-form" placeholder="max">
                             </div>
 
                             <label class="label-main-form">numero de baños</label>
@@ -255,25 +252,48 @@
 
     </main>
     <footer>
-        <div class="menu-footer">
-            <h3>MENÚ</h3>
-            <p>
-                GALERIA CON IMAGENES CARGADAS PERSONALIZADAS/
-                PRESENTAR UNA PROPIEDAD / BLOG / CONTACTO / AGENTES /
-                TODAS LAS PREGUNTAS FRECUENTES /
-            </p>
-            <h3>ACERCA DE </h3>
-            <P>
-                Tu vivienda es lider en bienes raices en linea y operador del sitio web WK de bienes y raíces
-                para consumidores y profesionales de bienes raíces. Los bienes raíces de sitio web capta más de
-                20 millones de visitantes mensuales.
-                
-            </P>
-            <h3>SOCIAL</h3>
-            <div class="redes-sociales">
-                
+        <div class="footer-column1">
+            <h2>Menu</h2>
+            <ul>
+                <li>home</li>
+                <li>properties</li>
+                <li>galery</li>
+                <li>contact</li>
+            </ul>
+            <h2 id="social">soccial</h2>
+            <div class="icons">
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-facebook-f icon"></i>
+                <i class="fab fa-google icon"></i>
             </div>
+        </div>
+        <div class="footer-column2">
+            <h2>Sobre nosotros</h2>
+            <p>
+                RealtySpace es líder en bienes raíces en línea y operador del sitio web WK de bienes raíces para consumidores y profesionales de bienes raíces. Los bienes raíces de los sitios web captan más de 20 millones de visitantes mensuales RealtySpace es el líder
+                en bienes raíces en línea y operador de la WK de bienes raíces
+            </p>
 
+        </div>
+        <div class="footer-column3">
+            <h2>contacto</h2>
+            <div class="footer-wrap">
+                <span id="footer-name">
+                    Martin Jimenez 
+                    <br>
+                    Daniel Salinas
+                </span>
+                <span id="footer-email">
+                    <a href="">Majiar16@gmail.com</a>
+                    <a href="">Danielsalinas70@gmail.com</a>
+                </span>
+            </div>
+            <h2>feedback</h2>
+            <form action="#" method="get">
+                <input type="text" name="" id="">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </form>
         </div>
 
     </footer>

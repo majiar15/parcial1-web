@@ -20,12 +20,16 @@ body {
 
 /* begin header */
 
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 header>nav>ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding: 25px;
-    color: #ffffff;
     z-index: 1;
     position: relative
 }
@@ -238,170 +242,6 @@ input:focus,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos de propiedad*/
-a{
-    text-decoration: none;
-}
-#propiedades{
-    background: #F6F6F6;
-}
-
-.submenu{
-    width: 100%;
-    height: 50px;
-    background:  #0ba;
-    margin: 30px;
-}
-.submenu ul li strong{
-    padding: 5px;
-    font-size: 15px;
-}
-.submenu ul{
-    display: flex;
-    
-}
-.submenu ul li{
-    padding: 10px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    
-}
-.submenu select{
-    width: 200px;
-    height: 30px;
-    display: inline-block;
-    background: #0ba;
-    color: #ffffff;
-    border-color: #ffffff;
-}
-.submenu .pagina select{
-    width: 80px;
-}
-.submenu ul li img{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-left: 7px;
-}
-.submenu ul li img:hover{
-    cursor: pointer;
-    padding: 3px;
-    
-    
-}
-.Container-propiedades{
-    display: flex;
-    margin: 120px;
-}
-.Container-propiedades .main-form{
-    color: #2C3E50;
-}
-.Container-propiedades .container-card{
-    width: 75%;
-    margin: 20px;
-}
-.Container-propiedades .search{
-    width: 25%;
-}
-.Container-propiedades .search h2{
-    font-size: 45px;
-    margin-bottom:10px ;
-}
-.Container-propiedades .container-card h2{
-    font-size: 40px;
-    float: left;
-
-}
-.search #main-form{
-    background-color: #ffffff;
-    border: 1px solid #dadadd;
-}
-.search #main-form{
-    margin-top: 10px;
-    height: 530px;
-}
-.search #main-form select{
-    width: 97%;
-}
-
-.search .imput-main-form{
-    width: 40%;
-}
-.search .label-main-form{
-    color: #000000;
-}
-.search #main-form button{
-    width: 100px;
-    float: right;
-}
-
-
-
-.Container-propiedades .container-card .card{
-    width: 270px
-}
 /* end bienes raices */
 
 
