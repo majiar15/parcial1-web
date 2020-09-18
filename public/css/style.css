@@ -16,6 +16,10 @@
                     background: #f6f6f6;
                 }
                 
+                .fas {
+                    display: none
+                }
+                
                 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
                 @font-face {
                     font-family: "Source Sans Pro";
@@ -505,6 +509,9 @@
                 }
                 
                 @media (max-width: 799px) {
+                    .fas {
+                        display: inline;
+                    }
                     #part1-content {
                         padding-top: 45px;
                     }
