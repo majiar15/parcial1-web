@@ -77,3 +77,36 @@ button{
     background: #f3bc65;
     box-shadow: none;
 }
+
+
+
+
+@media (max-width: 799px){
+    .bodyPage{
+        width: 90%;
+    }
+}
+@media (max-width: 479px) {
+    .bodyPage{
+        width: 95%;
+
+    }
+    .container-contacto{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .ciudades{
+        width: 90%;
+    }
+    .contactos2{
+        padding: 5px;
+        width: 90%;
+    }
+    .formulario input{
+        width: 90%;
+    }
+    .formulario textarea{
+        width: 90%;
+    }
+}

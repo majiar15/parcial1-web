@@ -451,14 +451,138 @@ footer::after {
     cursor: pointer;
 }
 
+/* end footer */
 
-/* #footer-name {
-    justify-content: flex-start;
+@media (max-width: 1328px){
+    .search #main-form {
+        width: 80%;
+        padding: 20px;
+    } 
+    .search #main-form select{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .search p{
+        width: 80%;
+    }
+    #main-form select {
+        margin-bottom: 25px;
+    }
+    .submenu{
+        height: 70px;
+    }
+    .submenu select{
+        width: 150px;
+    }
+    .submenu .pagina select{
+        width: 50px;
+    }
+
+    .submenu ul li strong {
+        padding: 3px;
+        font-size: 14px;
+    }
 }
 
-#footer-email {
-    justify-content: flex-end;
-} */
+@media (max-width: 1023px) {
+    #main-form {
+        height: 420px;
+    }
+    .Container-propiedades{
+        width: 98%;
+    }
+    .Container-propiedades .search h2 {
+        font-size: 30px;
+    }
+    .Container-propiedades .container-card{
+        width:65%;
+    }
+    .Container-propiedades .search{
+        width: 35%;
+        display: block;
+    }
+    .search #main-form {
+        width: 80%;
+        padding: 20px;
+    } 
+    .search #main-form select{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .search p{
+        width: 80%;
+    }
+    #main-form select {
+        margin-bottom: 25px;
+    }
+    .submenu{
+        height: 70px;
+    }
+    .submenu select{
+        width: 150px;
+    }
+    .submenu .pagina select{
+        width: 50px;
+    }
 
+    .submenu ul li strong {
+        padding: 3px;
+        font-size: 14px;
+    }
+    #footer-name {
+        width: 43%;
+    }
+}
 
-/* end footer */
+@media (max-width: 799px) {
+    
+    .submenu{
+        height: 140px;
+        
+    }
+    .submenu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .submenu ul li{
+        height: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    
+    .container-propiedad .search{
+        display: none;
+    }
+    .Container-propiedades{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .Container-propiedades .container-card{
+        width: 100%;
+       
+    }
+    .submenu{
+        width: 100%;
+    }
+    .submenu ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        width: 300px;
+    }
+    .Container-propiedades .search{
+        display: none;
+    }
+    #main-form{
+        width: 100%;
+    }
+    .search #main-form{
+        width: 100%;
+    }
+}
