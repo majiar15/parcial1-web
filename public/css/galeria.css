@@ -1,0 +1,29 @@
+* {
+    margin: 0PX;
+    padding: 0PX;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+main h2{
+    font-size: 45px;
+    margin-top: 30px;
+}
+.card h4{
+    margin: 10px;
+    max-width: none;
+    font-size: 20px;
+}
+
+
+.container-card .card-img img{
+    height: 300px;
+}
