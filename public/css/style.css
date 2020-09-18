@@ -6,11 +6,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background: #f6f6f6;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 @font-face {
     font-family: "Source Sans Pro";
     src: url('../assets/font/SourceSansPro-Regular.ttf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
+
+/* begin header */
 
 header>nav>ul {
     list-style: none;
@@ -133,9 +141,11 @@ input:focus,
     cursor: pointer;
 }
 
-#bienes-raices {
-    background: #f6f6f6;
-}
+
+/* end header */
+
+
+/* begin bienes raices */
 
 #bienes-raices>h2 {
     display: flex;
@@ -392,3 +402,265 @@ a{
 .Container-propiedades .container-card .card{
     width: 270px
 }
+/* end bienes raices */
+
+
+/* begin finanzas */
+
+#nuestra-mision {
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+}
+
+#image-mision {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+#image-mision>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#info {
+    width: 100%;
+    padding: 30px;
+}
+
+#mision {
+    display: flex;
+    flex-direction: column;
+}
+
+#mision>h2 {
+    font-size: 40px;
+    color: #0ba;
+    margin-bottom: 20px;
+}
+
+#mision>p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ahorra-dinero,
+#marketing,
+#comodidad,
+#facil-de-encontrar {
+    display: block;
+    width: 45%;
+    padding: 10px;
+}
+
+#ahorra-dinero>img,
+#marketing>img,
+#comodidad>img,
+#facil-de-encontrar>img {
+    width: 50px;
+    padding-top: 15px;
+}
+
+#ahorra-dinero>h3,
+#marketing>h3,
+#comodidad>h3,
+#facil-de-encontrar>h3 {
+    color: #0ba;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* end finanzas */
+
+
+/* begin asesores */
+
+#nuestros-agentes {
+    display: flex;
+    flex-direction: column;
+}
+
+#agents-letter h2 {
+    padding: 100px 0px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#agents-letter p {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 0px 80px 0px 80px;
+}
+
+.card-agents {
+    justify-content: space-around;
+    width: 250px;
+    position: relative;
+}
+
+.card-agents-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card-agents-body {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-agents-body>h3,
+.card-agents-body>p {
+    display: flex;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
+}
+
+
+/* end asesores */
+
+
+/* begin footer */
+
+footer {
+    margin-top: 50px;
+    background: url('../assets/img/edificios.jpg');
+    position: relative;
+    display: flex;
+    height: 500px;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+    position: relative;
+    z-index: 1;
+    color: #bebebe;
+    width: 33%;
+}
+
+.footer-column1 h2,
+.footer-column2 h2,
+.footer-column3 h2 {
+    font-size: 34px;
+    color: #0ba;
+    margin: 25px 0px 25px 0px;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-column1>ul>li {
+    margin-left: 8px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.footer-column1>ul>li>a {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #0ba;
+}
+
+.icon:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.footer-column2 {
+    margin-right: 4em;
+}
+
+.footer-column3 span {
+    width: 50%;
+}
+
+.footer-wrap>span>a {
+    text-decoration: none;
+    color: #bebebe;
+}
+
+.footer-wrap>span>a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-column3 input {
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #bebebe;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-column3 textarea {
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #bebebe;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-column3 textarea:focus,
+.footer-column3 input:focus {
+    -webkit-box-shadow: 1px 1px 1px 1px #0ba;
+    -moz-box-shadow: 1px 1px 1px 1px #0ba;
+    box-shadow: 1px 1px 20px 1px #0ba;
+}
+
+.footer-column3 button {
+    display: block;
+    padding: 15px 10px 15px 10px;
+    width: 80px;
+    border: 0px;
+    border-bottom: 4px solid #d99221;
+    background: #f3bc65;
+    box-shadow: none;
+}
+
+.footer-column3 button:hover {
+    cursor: pointer;
+}
+
+
+/* #footer-name {
+    justify-content: flex-start;
+}
+
+#footer-email {
+    justify-content: flex-end;
+} */
+
+
+/* end footer */
