@@ -10,6 +10,10 @@ body {
     background: #f6f6f6;
 }
 
+.fas {
+    display: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 @font-face {
     font-family: "Source Sans Pro";
@@ -19,6 +23,18 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
 
 /* begin header */
+
+.clear-fix {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.menu_bar {
+    position: relative;
+    z-index: 1;
+    display: none;
+}
 
 header {
     margin-top: 20px;
@@ -278,7 +294,6 @@ input:focus,
 .Container-propiedades .container-card {
     width: 75%;
     margin: 20px;
-    
 }
 
 .Container-propiedades .search {
@@ -451,34 +466,33 @@ footer::after {
     cursor: pointer;
 }
 
+
 /* end footer */
 
-@media (max-width: 1328px){
+@media (max-width: 1328px) {
     .search #main-form {
         width: 80%;
         padding: 20px;
-    } 
-    .search #main-form select{
+    }
+    .search #main-form select {
         width: 100%;
         margin-top: 5px;
     }
-    
-    .search p{
+    .search p {
         width: 80%;
     }
     #main-form select {
         margin-bottom: 25px;
     }
-    .submenu{
+    .submenu {
         height: 70px;
     }
-    .submenu select{
+    .submenu select {
         width: 150px;
     }
-    .submenu .pagina select{
+    .submenu .pagina select {
         width: 50px;
     }
-
     .submenu ul li strong {
         padding: 3px;
         font-size: 14px;
@@ -489,44 +503,42 @@ footer::after {
     #main-form {
         height: 420px;
     }
-    .Container-propiedades{
+    .Container-propiedades {
         width: 98%;
     }
     .Container-propiedades .search h2 {
         font-size: 30px;
     }
-    .Container-propiedades .container-card{
-        width:65%;
+    .Container-propiedades .container-card {
+        width: 65%;
     }
-    .Container-propiedades .search{
+    .Container-propiedades .search {
         width: 35%;
         display: block;
     }
     .search #main-form {
         width: 80%;
         padding: 20px;
-    } 
-    .search #main-form select{
+    }
+    .search #main-form select {
         width: 100%;
         margin-top: 5px;
     }
-    
-    .search p{
+    .search p {
         width: 80%;
     }
     #main-form select {
         margin-bottom: 25px;
     }
-    .submenu{
+    .submenu {
         height: 70px;
     }
-    .submenu select{
+    .submenu select {
         width: 150px;
     }
-    .submenu .pagina select{
+    .submenu .pagina select {
         width: 50px;
     }
-
     .submenu ul li strong {
         padding: 3px;
         font-size: 14px;
@@ -536,53 +548,145 @@ footer::after {
     }
 }
 
-@media (max-width: 799px) {
-    
-    .submenu{
-        height: 140px;
-        
+@media (max-width: 900px) {
+    .search {
+        display: none !important;
     }
-    .submenu ul{
+    .container-card {
+        width: 100% !important;
+        ;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 799px) {
+    .fas {
+        display: inline;
+    }
+    main {
+        margin-top: 60px;
+    }
+    .card {
+        width: 350px !important;
+    }
+    .menu_bar {
+        display: block;
+        position: fixed;
+        right: 1px;
+        top: 0;
+        width: 100%;
+        background: #000000;
+        padding: 20px 0px 20px 0px;
+        z-index: 2;
+    }
+    .menu_bar>i {
+        font-size: 25px;
+        margin-left: 30px;
+        text-decoration: none;
+        color: white;
+    }
+    .nav {
+        left: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    nav>ul {
+        position: fixed !important;
+        top: 60px;
+        flex-direction: column;
+        width: 40%;
+        padding: 0px;
+        z-index: 2 !important;
+    }
+    nav>ul>li {
+        background: black;
+    }
+    nav>ul>li:first-child {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    nav>ul>li {
+        font-size: 18px;
+        flex-direction: column;
+        border-bottom: 1px solid #ffffff;
+        padding: 10px;
+    }
+    nav>ul>li>a {
+        color: #fff !important;
+    }
+    footer {
+        display: block;
+        height: 750px;
+        padding-top: 20px;
+    }
+    .footer-column1,
+    .footer-column2,
+    .footer-column3 {
+        display: block;
+        width: 100%;
+    }
+    .footer-column1 h2,
+    .footer-column2 h2,
+    .footer-column3 h2 {
+        margin: 18px 0px 18px 0px;
+    }
+    .footer-column1 ul li {
+        float: left;
+    }
+    .footer-column3 input {
+        width: 100%;
+    }
+    .footer-column3 textarea {
+        width: 100%;
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .submenu {
+        height: 140px;
+    }
+    .submenu ul {
         display: flex;
         flex-direction: column;
     }
-    .submenu ul li{
+    .submenu ul li {
         height: 20px;
     }
 }
 
 @media (max-width: 479px) {
-    
-    .container-propiedad .search{
+    .container-propiedad .search {
         display: none;
     }
-    .Container-propiedades{
+    .Container-propiedades {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0px auto;
     }
-    .Container-propiedades .container-card{
-        width: 100%;
-       
-    }
-    .submenu{
-        width: 100%;
-    }
-    .submenu ul{
-        display: flex;
-        flex-direction: row;
-    }
-    .card{
-        width: 300px;
-    }
-    .Container-propiedades .search{
+    .Container-propiedades .search {
         display: none;
     }
-    #main-form{
+    #main-form {
         width: 100%;
     }
-    .search #main-form{
+    .search #main-form {
         width: 100%;
+    }
+    .wrap {
+        justify-content: center;
+    }
+    main h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    #footer-name {
+        width: 43%;
     }
 }

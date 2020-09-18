@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--<link rel="stylesheet" href="./public/css/style.css">-->
     <link rel="stylesheet" href="./public/css/Propiedades.css">
 </head>
@@ -12,26 +12,44 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu_bar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav">
                 <li class="logo"><a href="./index.html">tu vivienda</a></li>
-                <li><a href="./index.html">Principal</a></li>
                 <li>
-                    <a href="./Propiedades.html">Propiedades</a>
+
+                    <a href="./index.html">
+                        <i class="fas fa-home"></i> PRINCIPAL
+                    </a>
+                </li>
+                <li>
+                    <a href="./Propiedades.html">
+                        <i class="fas fa-city"></i> PROPIEDADES
+                    </a>
                     <span class="line"></span>
                 </li>
-                <li><a href="./galeria.html">Galeria </a></li>
-                <li><a href="./contacto.html">Contactos</a></li>
+                <li>
+                    <a href="./galeria.html"><i class="fas fa-images"  ></i>
+                    GALERIA 
+                </a>
+                </li>
+                <li>
+                    <a href="./contacto.html">
+                        <i class="fas fa-envelope"></i> CONTACTOS
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        
-        <div id="propiedades">      
+
+        <div id="propiedades">
             <div class="Container-propiedades">
                 <div class="container-card">
                     <h2>PROPIEDADES</h2>
-                    
-                    
+
+
                     <div class="submenu">
                         <ul>
                             <li>
@@ -298,6 +316,7 @@
         </div>
 
     </footer>
+    <script src="./public/js/main.js"></script>
 </body>
 
 </html>

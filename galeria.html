@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./public/css/galeria.css">
     <link rel="stylesheet" href="./public/css/Propiedades.css">
 </head>
@@ -12,17 +12,33 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu_bar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav">
                 <li class="logo"><a href="./index.html">tu vivienda</a></li>
-                <li><a href="./index.html">Principal</a></li>
                 <li>
-                    <a href="./Propiedades.html">Propiedades</a>
+
+                    <a href="./index.html">
+                        <i class="fas fa-home"></i> PRINCIPAL
+                    </a>
                 </li>
                 <li>
-                    <a href="./galeria.html">Galeria </a>
+                    <a href="./Propiedades.html">
+                        <i class="fas fa-city"></i> PROPIEDADES
+                    </a>
+                </li>
+                <li>
+                    <a href="./galeria.html"><i class="fas fa-images"  ></i>
+                        GALERIA 
+                    </a>
                     <span class="line"></span>
                 </li>
-                <li><a href="./contacto.html">Contactos </a></li>
+                <li>
+                    <a href="./contacto.html">
+                        <i class="fas fa-envelope"></i> CONTACTOS
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,15 +49,15 @@
             <div class="card">
                 <div class="card-img">
                     <img src="./public/assets/img/comedor.jpg" alt="">
-                </div>         
+                </div>
                 <h4>Comedor</h4>
             </div>
 
 
             <div class="card">
                 <div class="card-img">
-                   <img src="./public/assets/img/piscina.jpg" alt="">
-                </div>  
+                    <img src="./public/assets/img/piscina.jpg" alt="">
+                </div>
                 <h4>Piscina</h4>
             </div>
 
@@ -52,33 +68,33 @@
                 </div>
 
                 <h4>Cocina</h4>
-    
+
             </div>
             <div class="card">
                 <div class="card-img">
                     <img src="./public/assets/img/baño2.jpg" alt="">
                 </div>
-                
+
                 <h4>Baño</h4>
             </div>
             <div class="card">
                 <div class="card-img">
                     <img src="./public/assets/img/cocina2.jpg" alt="">
                 </div>
-                
+
                 <h4>Cocina</h4>
-    
+
             </div>
             <div class="card">
                 <div class="card-img">
                     <img src="./public/assets/img/sala.jpg" alt="">
                 </div>
-                
+
                 <h4>Sala</h4>
-    
+
             </div>
         </div>
-        
+
     </main>
 
 
@@ -130,6 +146,7 @@
         </div>
 
     </footer>
+    <script src="./public/js/main.js"></script>
 </body>
 
 </html>
